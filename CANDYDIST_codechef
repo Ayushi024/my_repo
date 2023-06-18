@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) {
+	int N,M;
+	int t;
+	int n;
+	scanf("%d",&t);
+	
+	while(t-->0)
+	{
+	    scanf("%d %d",&N,&M);
+	    if(N%M==0)
+	 {
+	     n=N/M;
+	    if(n%2==0)
+	    {
+	        printf("YES\n");
+	    }
+	    else
+	    {
+	        printf("NO\n");
+	    }
+	}
+	    else{
+	        printf("NO\n");
+	    }
+	}
+	return 0;
+}
+
