@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() 
+{
+	
+	int N1,N2;
+	int sum;
+	int diff;
+	    scanf("%d %d",&N1,&N2);
+	    if(N1>N2)
+      {
+	        diff=N1-N2;
+	        printf("%d\n",diff);
+	    }
+	    else
+      {
+	        sum=N1+N2;
+	        printf("%d\n",sum);
+	    }
+	    
+	
+	return 0;
+}
+
