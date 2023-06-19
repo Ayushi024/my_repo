@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<math.h>
+int main() 
+{
+	int T;
+	int x,y,x2,y2;
+	int distance_BOB;
+	int distance_ALEX;
+	scanf("%d",&T);
+	while(T-->0){
+	    scanf("%d %d %d %d",&x,&y,&x2,&y2);
+	    distance_BOB=(x2)*(x2)+(y2)*(y2);
+	    distance_ALEX=(x)*(x)+(y)*(y);
+	    if(distance_ALEX>distance_BOB){
+	        printf("ALEX\n");
+	    }
+	    else if(distance_BOB==distance_ALEX)
+	    {
+	        printf("EQUAL\n");
+	    }
+	    else{
+	        printf("BOB\n");
+	    }
+	}
+	return 0;
+}
+
