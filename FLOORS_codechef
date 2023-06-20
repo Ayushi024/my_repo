@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() 
+{
+	int T;
+	int x,y;
+	int A,B;
+	int floor_no_of_x,floor_no_of_y;
+	int distance;
+	scanf("%d",&T);
+	while(T-->0){
+	    scanf("%d %d",&x,&y);
+	    if(x%10!=0)
+	    {
+	    A=x/10;
+	    floor_no_of_x=A+1;
+	    }
+	    else if(x%10==0)
+	    {
+	        floor_no_of_x=x/10; 
+	    }
+	    
+	    if(y%10!=0){
+	    B=y/10;
+	    floor_no_of_y=B+1;
+	        
+	    }
+	    
+	    else if(y%10==0)
+	    {
+	       
+	        floor_no_of_y=y/10;
+	        
+	    }
+	    distance=abs(floor_no_of_x-floor_no_of_y) ;
+	    printf("%d\n",distance);
+	}
+	return 0;
+}
+
