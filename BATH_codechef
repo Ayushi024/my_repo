@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() 
+{
+	int T;
+	int X,Y;
+	int no_of_people,total;
+	scanf("%d",&T);
+	while(T-->0){
+	    scanf("%d %d",&X,&Y);
+	    total=Y*2;
+	    if(total>X){
+	        printf("0\n");
+	    }
+	    else{
+	        no_of_people=X/total;
+	        printf("%d\n",no_of_people);
+	    }
+	}
+	return 0;
+}
+
