@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() 
+{
+	int T;
+	int x,y,z;
+	int selling_cost,purchasing_cost;
+	int total_profit;
+	scanf("%d",&T);
+	while(T-->0){
+	    scanf("%d %d %d",&x,&y,&z);
+	    purchasing_cost=x*y;
+	    selling_cost=x*z;
+	    total_profit=selling_cost-purchasing_cost;
+	    printf("%d\n",total_profit);
+	}
+	return 0;
+}
+
