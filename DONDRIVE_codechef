@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+	int x;
+	int t;
+	int y;
+	scanf("%d",&t);
+	while(t-->0)
+	{
+	    scanf("%d",&x);
+	    scanf("%d",&y);
+	    int a = x-y;
+	    if(a>0){
+	        printf("%d\n",a);
+	    }
+	    else{
+	        printf("0\n");
+	    }
+	}
+	return 0;
+}
