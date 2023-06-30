@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() 
+{
+	int T;
+	int L,R;
+	scanf("%d",&T);
+	while(T-->0){
+	    scanf("%d %d",&L,&R);
+	    int count=0;
+	    for( int i=L;i<=R;i++){
+	        if(i%10==2 || i%10==3 ||i%10==9){
+	            count=count+1;
+	            
+	        }
+	        
+	    }
+	    printf("%d\n",count);
+	    
+	}
+	return 0;
+}
+
