@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() 
+{
+	int T;
+	int N,L,x;
+	int cost,Right;
+	int total;
+	scanf("%d",&T);
+	while(T-->0){
+	    scanf("%d %d",&N,&L);
+	    scanf("%d",&x);
+	    Right=N-L;
+	   if(Right>L)
+	   {
+	       total=L;
+	       cost=x*L;
+	       printf("%d\n",cost);
+	   }
+	   else if(Right<L)
+	   {
+	       total=Right;
+	       cost=x*Right;
+	       printf("%d\n",cost);
+	   }
+	   else
+	   {
+	       total=Right;
+	       cost=x*Right;
+	       printf("%d\n",cost);
+	   }
+	    
+	}
+	return 0;
+}
+
